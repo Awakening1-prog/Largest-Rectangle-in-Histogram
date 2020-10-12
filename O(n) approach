@@ -15,7 +15,6 @@ class Solution:
             else:
                 left[i]=stack[-1]
             stack.append(i)
-        print(left)
         stack1=[]
         stack1.append(len(heights)-1)
         right[-1]=len(heights)
@@ -27,7 +26,6 @@ class Solution:
             else:
                 right[i]=stack1[-1]
             stack1.append(i)
-        print(right)
         maxarea=0
         right[-1]=len(heights)
         for i in range(len(heights)):
